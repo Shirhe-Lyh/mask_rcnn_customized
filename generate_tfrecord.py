@@ -191,11 +191,6 @@ def get_annotation_dict(images_dir, image_name=None, masks_dir=None,
             return None
         with tf.gfile.GFile(mask_path, 'rb') as fid:
             encoded_mask = fid.read()
-#        mask = cv2.imread(mask_path, 0)
-#        pil_image = PIL.Image.fromarray(mask)
-#        output_io = io.BytesIO()
-#        pil_image.save(output_io, format='PNG')
-#        encoded_mask = output_io.getvalue()
         
         masks.append(encoded_mask)
         ymin, xmin, ymax, xmax = bbox
