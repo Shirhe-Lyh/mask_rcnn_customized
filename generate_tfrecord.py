@@ -8,7 +8,6 @@ Created on Wed Oct 31 19:31:00 2018
 Convert raw dataset to TFRecord for object_detection.
 """
 
-import cv2
 import glob
 import hashlib
 import io
